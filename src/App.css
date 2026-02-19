@@ -1,0 +1,201 @@
+hal2 {
+          position: relative;
+          width: 100%;
+          height: 100vh;
+          display: flex;
+          font-family: 'DM Sans', sans-serif;
+          overflow: hidden;
+          background: #0a0a0a;
+        }
+
+        .header-strip {
+          position: absolute;
+          top: 0; left: 0; right: 0;
+          z-index: 10;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 28px 48px;
+          border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .judul {
+          font-family: 'Bebas Neue', sans-serif;
+          font-size: clamp(1.1rem, 2vw, 1.5rem);
+          letter-spacing: 0.25em;
+          color: #fff;
+          text-transform: uppercase;
+        }
+
+        .counter {
+          position: absolute;
+          right: 48px;
+          font-size: 0.75rem;
+          letter-spacing: 0.1em;
+          color: rgba(255,255,255,0.35);
+        }
+
+        .kiri {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 120px 64px 80px 64px;
+          background: #0a0a0a;
+          position: relative;
+          z-index: 2;
+        }
+
+        .kiri::after {
+          content: '';
+          position: absolute;
+          top: 0; right: 0;
+          width: 1px;
+          height: 100%;
+          background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.15) 40%, rgba(255,255,255,0.15) 60%, transparent);
+        }
+
+        .skill-tag {
+          font-size: 0.7rem;
+          letter-spacing: 0.2em;
+          color: #e8c547;
+          text-transform: uppercase;
+          margin-bottom: 20px;
+          opacity: 0.9;
+        }
+
+        .skill-title {
+          font-family: 'Bebas Neue', sans-serif;
+          font-size: clamp(3rem, 6vw, 5.5rem);
+          line-height: 0.95;
+          color: #fff;
+          margin-bottom: 32px;
+          transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .skill-title.fade {
+          opacity: 0;
+          transform: translateX(-20px);
+        }
+
+        .divider {
+          width: 48px;
+          height: 2px;
+          background: #e8c547;
+          margin-bottom: 28px;
+        }
+
+        .skill-desc {
+          font-size: 0.95rem;
+          line-height: 1.8;
+          color: rgba(255,255,255,0.55);
+          max-width: 420px;
+          font-weight: 300;
+          transition: opacity 0.3s ease;
+        }
+
+        .skill-desc.fade {
+          opacity: 0;
+        }
+
+        .kanan {
+          flex: 1;
+          position: relative;
+          overflow: hidden;
+        }
+
+        .kanan::before {
+          content: '';
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(135deg, rgba(232,197,71,0.08) 0%, transparent 60%);
+          z-index: 1;
+          pointer-events: none;
+        }
+
+        .kanan img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          filter: grayscale(30%) brightness(0.7);
+          transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .kanan img.fade {
+          opacity: 0;
+          transform: scale(1.04);
+        }
+
+        .img-placeholder {
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(135deg, #1a1a1a 0%, #111 50%, #0d0d0d 100%);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .img-placeholder svg {
+          width: 80px;
+          opacity: 0.1;
+        }
+
+        .nav-buttons {
+          position: absolute;
+          bottom: 48px;
+          left: 64px;
+          z-index: 10;
+          display: flex;
+          gap: 12px;
+        }
+
+        .btn-nav {
+          width: 52px;
+          height: 52px;
+          border: 1px solid rgba(255,255,255,0.2);
+          background: rgba(255,255,255,0.04);
+          color: #fff;
+          font-size: 1.1rem;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.2s ease;
+          backdrop-filter: blur(8px);
+        }
+
+        .btn-nav:hover {
+          background: #e8c547;
+          color: #0a0a0a;
+          border-color: #e8c547;
+          transform: scale(1.05);
+        }
+
+        .btn-nav:active {
+          transform: scale(0.97);
+        }
+
+        .dots {
+          position: absolute;
+          bottom: 62px;
+          right: 48px;
+          z-index: 10;
+          display: flex;
+          gap: 8px;
+        }
+
+        .dot {
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background: rgba(255,255,255,0.2);
+          transition: all 0.3s ease;
+          cursor: pointer;
+        }
+
+        .dot.active {
+          background: #e8c547;
+          width: 24px;
+          border-radius: 3px;
+        }
+      

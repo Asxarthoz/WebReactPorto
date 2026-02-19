@@ -1,0 +1,650 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+#judul {
+    padding-bottom: 5%;
+}
+
+#myPict {
+    width: 300px;
+    border-radius: 30px;
+}
+
+#parIdText {
+    font-size: 18px;
+}
+
+.halaman1 {
+    background-image: radial-gradient(58% 30% at center, rgb(57, 76, 187), black);
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.halaman1.animate {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.identityText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.identityText.animate {
+    animation: fadeInUp 0.8s ease-out 0.3s both;
+}
+
+.identity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20%;
+}
+
+.identity.animate {
+    animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+#judul2 {
+    padding-bottom: 50px;
+}
+
+.halaman2 {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.halaman2.animate h1 {
+    animation: fadeIn 0.8s ease-out;
+}
+
+.eksWadah {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 80px;
+    padding-right: 30px;
+}
+
+.eksWadah.animate {
+    animation: fadeInScale 0.8s ease-out 0.3s both;
+}
+
+.wdhBtn {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.halaman3 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container.animate {
+    animation: fadeInScale 0.8s ease-out;
+}
+
+.container.animate h1 {
+    animation: fadeIn 0.8s ease-out 0.3s both;
+}
+
+.boxCont {
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.reactPng {
+    width: 150px;
+}
+
+.skillF {
+    font-weight: 600;
+}
+
+.container4 {
+    border-radius: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: white;
+    color: black;
+    justify-content: center;
+    align-items: center;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+
+.container4.animate h1 {
+    animation: fadeIn 0.8s ease-out;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.gambar {
+    width: 120px;
+    border-radius: 18px;
+}
+
+.item {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.item:nth-child(1).animate {
+    animation: slideInLeft 0.8s ease-out 0.2s both;
+}
+
+.item:nth-child(2).animate {
+    animation: fadeInScale 0.8s ease-out 0.4s both;
+}
+
+.item:nth-child(3).animate {
+    animation: slideInRight 0.8s ease-out 0.6s both;
+}
+
+.sliderWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.sliderWrapper.animate {
+    animation: fadeInScale 0.8s ease-out 0.5s both;
+}
+
+.sliderViewport {
+    width: 500px;
+    max-width: 90vw;
+    overflow: hidden;
+}
+
+.sliderTrack {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.itemBox {
+    flex: 0 0 500px;
+    max-width: 90vw;
+    height: 600px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.itemBox h1 {
+    margin: 0;
+    text-align: center;
+}
+
+.itemBox p {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.itemBox button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.itemBox button:hover {
+    background-color: #0056b3;
+}
+
+.navBtn {
+    color: black;
+    font-size: 24px;
+    background: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.navBtn:hover {
+    background-color: #f0f0f0;
+}
+
+.earth {
+    position: absolute;
+    width: 520px;
+    bottom: -10%;
+    right: -10%;
+    animation: floating 4s ease-in-out infinite;
+    pointer-events: none;
+    opacity: 0.85;
+}
+
+@keyframes floating {
+    0%   { transform: translateY(0px); }
+    50%  { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 980px) {
+    body {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    #myPict {
+        width: 200px;
+    }
+    
+    #parIdText {
+        font-size: 16px;
+    }
+    
+    .identity {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 10px;
+    }
+    
+    .eksWadah {
+        flex-direction: row;
+        gap: 30px;
+        padding: 20px 10px;
+    }
+    
+    .halaman3 {
+        height: auto;
+        min-height: 100vh;
+        padding: 20px 0;
+    }
+    
+    .container {
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .sliderWrapper {
+        gap: 5px;
+        padding: 0 5px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .sliderViewport {
+        width: 70vw;
+        max-width: 70vw;
+    }
+    
+    .itemBox {
+        flex: 0 0 70vw;
+        max-width: 70vw;
+        height: auto;
+        min-height: 500px;
+        padding: 15px;
+        gap: 15px;
+    }
+    
+    .itemBox h1 {
+        font-size: 20px;
+    }
+    
+    .reactPng {
+        width: 100px;
+    }
+    
+    .skillF {
+        font-size: 14px;
+    }
+    
+    .itemBox button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    
+    .navBtn {
+        font-size: 18px;
+        padding: 10px 15px;
+        margin: 0 5px;
+    }
+    
+    .container4 {
+        padding: 20px 15px;
+        width: 90%;
+        box-sizing: border-box;
+    }
+    
+    .box {
+        flex-direction: row;
+        gap: 15px;
+        padding: 20px 0;
+    }
+    
+    .item {
+        width: auto;
+        max-width: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .gambar {
+        width: 70px;
+    }
+
+    #gambarEks {
+        width: 250px;
+    }
+    
+    #h4 {
+        font-size: 16px;
+    }
+
+    .earth {
+        width: 300px;
+        right: -15%;
+        bottom: -7%;
+    }
+}
+
+.hal3-skill {
+  background-image: radial-gradient(78% 50% at right, rgb(57, 76, 187), black);
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+
+.rank-carousel-track {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rank-card {
+  position: absolute;
+  width: 450px;
+  min-height: 550px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.rank-card h1 {
+  font-size: 32px;
+  margin: 0;
+  font-weight: 800;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.rank-card p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  color: white;
+}
+
+.gbrRank {
+  width: 200px;
+  height: auto;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+  border-radius: 12px;
+}
+
+.rank-card.center {
+  transform: translateX(0) scale(1.15);
+  z-index: 3;
+  opacity: 1;
+}
+
+.rank-card.prev {
+  transform: translateX(-500px) scale(0.85);
+  z-index: 2;
+  opacity: 0.5;
+}
+
+.rank-card.next {
+  transform: translateX(500px) scale(0.85);
+  z-index: 2;
+  opacity: 0.5;
+}
+
+.rank-card.prev:hover {
+  opacity: 0.8;
+  transform: translateX(-500px) scale(0.9);
+}
+
+.rank-card.next:hover {
+  opacity: 0.8;
+  transform: translateX(500px) scale(0.9);
+}
+
+/* Tombol Carousel */
+.carousel-btn {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  min-height: auto;
+}
+
+.carousel-btn:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: scale(1.1) translateY(0);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+}
+
+.carousel-btn.prev { left: 50px; }
+.carousel-btn.next { right: 50px; }
+
+/* Dots */
+.rank-dots {
+  position: absolute;
+  bottom: 50px;
+  display: flex;
+  gap: 15px;
+  z-index: 10;
+}
+
+.rank-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: all 0.3s;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.rank-dot.active {
+  background: white;
+  transform: scale(1.4);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.rank-dot:hover {
+  background: rgba(255, 255, 255, 0.7);
+  transform: scale(1.2);
+}
+
+.skill-card button {
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.25);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  min-height: auto;
+  transition: background-color 0.3s;
+}
+
+.skill-card button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  transform: none;
+  box-shadow: none;
+}
+
+@media (max-width: 980px) {
+  .rank-carousel-track { height: 500px; }
+
+  .rank-card {
+    width: 300px;
+    min-height: 420px;
+    padding: 25px;
+  }
+
+  .rank-card h1 { font-size: 22px; }
+  .rank-card p { font-size: 14px; }
+  .gbrRank { width: 140px; }
+
+  .rank-card.center { transform: translateX(0) scale(1.05); }
+  .rank-card.prev { transform: translateX(-280px) scale(0.7); opacity: 0.3; }
+  .rank-card.next { transform: translateX(280px) scale(0.7); opacity: 0.3; }
+
+  .carousel-btn { width: 50px; height: 50px; font-size: 20px; }
+  .carousel-btn.prev { left: 10px; }
+  .carousel-btn.next { right: 10px; }
+
+  .rank-dots { bottom: 30px; }
+}

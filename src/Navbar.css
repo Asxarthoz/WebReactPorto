@@ -1,0 +1,37 @@
+.navbar {
+  position: sticky;
+  display: flex;
+  top: 0;
+  width: 100%;
+  background-color: #1a1a1a;
+  padding: 15px 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  justify-content: center;
+}
+
+.items {
+  display: flex;
+  gap: 40px; /* Jarak antar icon */
+  align-items: center;
+}
+
+.icons {
+  width: 35px;
+  filter: invert(1);
+  cursor: pointer;
+  padding-bottom: 5px; /* Kasih space buat garis bawah */
+  border-bottom: 3px solid transparent; /* Garis transparan default */
+  transition: all 0.3s ease; /* Animasi smooth */
+}
+
+/* Hover effect - garis bawah muncul */
+.icons:hover {
+  border-bottom: 3px solid black; /* Garis putih pas hover */
+  transform: translateY(-2px); /* Optional: icon naik sedikit */
+}
+
+/* Optional: Active/clicked state */
+.icons:active {
+  transform: translateY(0);
+}
